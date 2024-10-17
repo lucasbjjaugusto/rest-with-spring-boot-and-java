@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class DeletePerson {
 
     private final PersonGateway personGateway;
-    private Logger logger = Logger.getLogger(DeletePerson.class.getName());
+    private final Logger logger = Logger.getLogger(DeletePerson.class.getName());
 
     public DeletePerson(PersonGateway personGateway) {
         this.personGateway = personGateway;
@@ -23,7 +23,7 @@ public class DeletePerson {
         if (personOptional.isEmpty()) {
             throw new ResourceNotFoundException("Person not found.");
         }
-        logger.info("Deleting one person");
+        logger.info("Deleting a person");
         personGateway.remove(id);
     }
 }

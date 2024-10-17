@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67765b4b-95f7-4028-b73c-e27c9fe032d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rest-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rest-with-spring-boot-and-java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-api/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/config/OpenAPIConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/config/OpenAPIConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/entity/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/entity/user/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/dto/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/person/dto/PersonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/person/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/person/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/user/MathController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/controller/math/MathController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/infrastructure/repository/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/CreatePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/CreatePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/DeletePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/DeletePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/FindAllPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/FindAllPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/FindPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/FindPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/UpdatePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/person/UpdatePerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/java/br/com/springstudy/usecase/user/AuthorizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-api/src/main/resources/db.migration/create-table-users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rest-api/src/main/resources/db/migration/V3__create-table-users.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +41,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -54,39 +59,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [clean].executor": "Run",
-    "Maven. [install].executor": "Run",
-    "Maven. [spring-boot:run].executor": "Run",
-    "Maven. [verify].executor": "Run",
-    "Maven.rest-api [clean].executor": "Run",
-    "Maven.rest-api [install].executor": "Run",
-    "Maven.rest-api [spring-boot:run].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.StartApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lucas/OneDrive/Área de Trabalho/Developer/Projetos/Devs/rest-with-spring-boot-and-java/rest-api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [spring-boot:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest-api [spring-boot:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.StartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucas/Projetos/Devs/rest-with-spring-boot-and-java/rest-api/src/main/java/br/com/springstudy/infrastructure/util/person&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\java\br\com\springstudy\infrastructure\util\person" />
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\java\br\com\springstudy\infrastructure\controller\book\dto" />
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\java\br\com\springstudy\usecase\book" />
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\java\br\com\springstudy\infrastructure\repository\book" />
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\resources\db\migration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas\Projetos\Devs\rest-with-spring-boot-and-java\rest-api\src\main\resources\db\migration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.springstudy.infrastructure.controller.person.dto" />
+      <recent name="br.com.springstudy.infrastructure.controller.book.dto" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
-      <command value="mvn install" />
       <command value="mvn verify" />
+      <command value="mvn install" />
       <command value="mvn spring-boot:run" />
     </option>
   </component>
@@ -124,6 +150,7 @@
       <workItem from="1726066289543" duration="67000" />
       <workItem from="1726066365345" duration="2200000" />
       <workItem from="1726144474857" duration="67000" />
+      <workItem from="1729113533284" duration="4489000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ public class OpenAPIConfiguration {
     public OpenAPI myOpenAPI() {
 
         Info info = new Info()
-                .title("REST-API")
+                .title("RESTfull-API")
                 .version("1.0.0")
                 .description("Microserviço de estudos");
 

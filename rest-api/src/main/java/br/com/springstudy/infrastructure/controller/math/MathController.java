@@ -1,4 +1,4 @@
-package br.com.springstudy.infrastructure.controller.user;
+package br.com.springstudy.infrastructure.controller.math;
 
 import br.com.springstudy.infrastructure.exception.ResourceNotFoundException;
 import br.com.springstudy.infrastructure.util.NumberConverter;

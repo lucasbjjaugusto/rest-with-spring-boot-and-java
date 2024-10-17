@@ -1,8 +1,11 @@
-package br.com.springstudy.infrastructure.controller.dto;
+package br.com.springstudy.infrastructure.controller.person.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
-public record PersonRequest(
+public record PersonResponse(
+        @NotNull
+        Long id,
         @NotBlank
         String firstName,
         @NotBlank
