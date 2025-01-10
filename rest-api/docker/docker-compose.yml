@@ -1,4 +1,4 @@
-version: '1.0'
+version: '3.8'
 
 services:
   db-cliente:
@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: db-postgres
       POSTGRES_PASSWORD: db-postgres
-      POSTGRES_DB: db-postgress
+      POSTGRES_DB: postgres_database
     ports:
       - "5432:5432"
     volumes:
@@ -15,3 +15,4 @@ services:
     
 volumes:
   postgres-data:
+##docker exec -it CONTAINER_NAME psql -U DB_USER -d DB_NAME

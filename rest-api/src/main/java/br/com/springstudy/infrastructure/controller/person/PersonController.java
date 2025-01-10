@@ -35,6 +35,7 @@ public class PersonController {
         this.findAllPerson = findAllPerson;
     }
 
+    @CrossOrigin(origins = "http://localhost:8090")//No postman colocar no headers o origin um outro url para testar
     @Operation(summary = "Find person", description = "service for find a person by ID.",
             tags = {"Person"},
             responses = {

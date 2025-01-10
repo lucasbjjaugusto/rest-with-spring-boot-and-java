@@ -1,8 +1,14 @@
+server:
+  port: ${PORT:8090}
+  servlet:
+    context-path: /api/estudos
+cors:
+  originPatterns: http://localhost:8090
 spring:
   application:
     name: rest-api
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/db-postgress}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/postgres_database}
     username: ${SPRING_DATASOURCE_USERNAME:db-postgres}
     password: ${SPRING_DATASOURCE_PASSWORD:db-postgres}
   jpa:
@@ -12,5 +18,3 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
-server:
-  port: ${PORT:8090}

@@ -12,9 +12,9 @@ public class OpenAPIConfiguration {
     public OpenAPI myOpenAPI() {
 
         Info info = new Info()
-                .title("RESTfull-API")
+                .title("Rest-API")
                 .version("1.0.0")
-                .description("Microserviço de estudos");
+                .description("Microserviço de estudos"); //http://localhost:8090/api/estudos/swagger-ui/index.html#/
 
         return new OpenAPI().info(info);
     }
